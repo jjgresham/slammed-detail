@@ -1,45 +1,57 @@
 import React from 'react';
+import './Pricing.css';
 
 function Pricing() {
   return (
-    <div className="pricing-container">
-      <h1>Pricing</h1>
-      <p>Select the plan that fits your needs. We offer flexible pricing options to accommodate a variety of preferences.</p>
-      
-      <div className="pricing-plans">
-        <div className="plan basic">
-          <h2>--Basic Plan--</h2>
-          <p className="price">$19.99 / month</p>
-          <div className="features">
-            <p>Essential Features</p>
-            <p>Access to Core Services</p>
-            <p>Email Support</p>
-          </div>
+    <div className="pricing-page">
+      <section className="pricing-hero">
+        <h1>Services & Pricing</h1>
+      </section>
+
+      <section className="pricing-intro">
+        <h2>Our Detailing Packages</h2>
+        <p>Choose from our range of detailing services to keep your vehicle looking brand new.</p>
+      </section>
+
+      <section className="pricing-table">
+        <div className="pricing-card">
+          <h3>Basic Wash</h3>
+          <p className="price">$50</p>
+          <ul>
+            <li>Hand Wash & Dry</li>
+            <li>Interior Vacuum</li>
+            <li>Windows & Mirrors Cleaned</li>
+            <li>Wheel & Tire Shine</li>
+          </ul>
         </div>
-        
-        <div className="plan standard">
-          <h2>--Standard Plan--</h2>
-          <p className="price">$49.99 / month</p>
-          <div className="features">
-            <p>All Basic Features</p>
-            <p>Additional Tools and Resources</p>
-            <p>Priority Email Support</p>
-          </div>
+
+        <div className="pricing-card">
+          <h3>Full Detail</h3>
+          <p className="price">$150</p>
+          <ul>
+            <li>Everything in Basic Wash</li>
+            <li>Wax & Paint Sealant</li>
+            <li>Deep Interior Cleaning</li>
+            <li>Leather & Fabric Conditioning</li>
+          </ul>
         </div>
-        
-        <div className="plan premium">
-          <h2>--Premium Plan--</h2>
-          <p className="price">$99.99 / month</p>
-          <div className="features">
-            <p>All Standard Features</p>
-            <p>Exclusive Access to Premium Features</p>
-            <p>24/7 Phone and Email Support</p>
-          </div>
+
+        <div className="pricing-card">
+          <h3>Premium Ceramic Coating</h3>
+          <p className="price">$500+</p>
+          <ul>
+            <li>Everything in Full Detail</li>
+            <li>Multi-Layer Ceramic Protection</li>
+            <li>6-12 Month Durability</li>
+            <li>Water & Dirt Repellent Finish</li>
+          </ul>
         </div>
-      </div>
-      <p>
-        <i className="disclaimer">*All plans include a 30-day money-back guarantee. No commitments—cancel anytime!</i>
-      </p>
+      </section>
+
+      <section className="cta-section">
+        <p>Not sure which package is right for you? Contact us for a personalized recommendation!</p>
+        <a href="/contact" className="cta-button">Get a Quote</a>
+      </section>
     </div>
   );
 }
