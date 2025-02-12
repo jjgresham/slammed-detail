@@ -1,0 +1,97 @@
+/* Pricing.css */
+.pricing-page {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .pricing-hero {
+    width: 100%;
+    height: 60vh;
+    background: url('../assets/pricing-hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .pricing-hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  /* Pricing Intro */
+  .pricing-intro {
+    background: #f8f8f8;
+    padding: 3rem 2rem;
+  }
+  
+  .pricing-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Pricing Table */
+  .pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 3rem 2rem;
+  }
+  
+  .pricing-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .pricing-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    font-size: 2rem;
+    color: #e63946;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pricing-card ul li {
+    font-size: 1rem;
+    margin: 8px 0;
+  }
+  
+  /* Call to Action */
+  .cta-section {
+    padding: 3rem 2rem;
+    background: #f8f8f8;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background: #e63946;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background: #d62839;
+  }
+  
