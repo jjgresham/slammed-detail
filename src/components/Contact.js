@@ -1,57 +1,51 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './Contact.css';
 
 function Contact() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here, you can handle sending the email or text
-    alert(`Message sent by ${name}!`);
-  };
-
   return (
-    <div className="contact-container">
-      <h1>Contact Us</h1>
-      <h3>Call us at XXX-XXX-XXXX</h3>
-      <p>If you have any questions or would like to get in touch, please fill out the form below. We will respond as soon as possible.</p>
-      
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
+    <div className="contact-page">
+      <section className="contact-hero">
+        <h1>Contact Us</h1>
+      </section>
+
+      <section className="contact-info">
+        <h2>Get In Touch</h2>
+        <p>Have questions or want to schedule an appointment? Reach out to us!</p>
+
+        <div className="contact-details">
+          <div className="contact-item">
+            <h3>Phone</h3>
+            <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+          </div>
+          <div className="contact-item">
+            <h3>Email</h3>
+            <p><a href="mailto:info@slammeddetailing.com">info@slammeddetailing.com</a></p>
+          </div>
+          <div className="contact-item">
+            <h3>Location</h3>
+            <p>123 Detailer St, Car City, ST 56789</p>
+          </div>
         </div>
-        
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        
-        <div className="form-group">
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
-        </div>
-        
-        <button type="submit" className="submit-button">Send Message</button>
-      </form>
+      </section>
+
+      <section className="contact-form">
+        <h2>Send Us a Message</h2>
+        <form>
+          <div className="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div className="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div className="form-group">
+            <label>Message</label>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" className="cta-button">Send Message</button>
+        </form>
+      </section>
     </div>
   );
 }
