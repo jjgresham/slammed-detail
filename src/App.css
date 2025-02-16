@@ -18,12 +18,12 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background: #000;
+  padding: 0rem 2rem;
+  background: #FF6600;
 }
 
 .logo {
-  height: 50px;
+  height: 125px;
 }
 
 .header nav ul {
@@ -52,8 +52,8 @@ body, html {
 /* Footer */
 .footer {
   text-align: center;
-  background: #000;
-  color: #fff;
+  background: #CBC3B4;
+  color: black;
   padding: 1rem 0;
   margin-top: auto;
   font-size: 0.9rem;
