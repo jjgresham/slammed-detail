@@ -28,24 +28,6 @@ function Contact() {
         </div>
       </section>
 
-      <section className="contact-form">
-        <h2>Send Us a Message</h2>
-        <form>
-          <div className="form-group">
-            <label>Name</label>
-            <input type="text" placeholder="Your Name" required />
-          </div>
-          <div className="form-group">
-            <label>Email</label>
-            <input type="email" placeholder="Your Email" required />
-          </div>
-          <div className="form-group">
-            <label>Message</label>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-          </div>
-          <button type="submit" className="cta-button">Send Message</button>
-        </form>
-      </section>
     </div>
   );
 }

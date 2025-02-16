@@ -35,7 +35,7 @@
   
   .cta-button {
     display: inline-block;
-    background: #e63946;
+    background: #FF9E42;
     color: #fff;
     padding: 12px 24px;
     text-decoration: none;
@@ -45,12 +45,12 @@
   }
   
   .cta-button:hover {
-    background: #d62839;
+    background: #FF6600;
   }
   
   /* Services Section */
   .services {
-    background: #f8f8f8;
+    background: #CBC3B4;
     padding: 4rem 2rem;
     color: #333;
   }
@@ -85,4 +85,11 @@
   .service p {
     font-size: 1rem;
   }
+
+  @media (max-width: 768px) {
+    .nav {
+      z-index: 999; /* Ensure it's above other elements */
+    }
+  }
+  
   
