@@ -24,7 +24,7 @@
   
   /* Contact Info Section */
   .contact-info {
-    background: #f8f8f8;
+    background-color: #CBC3B4;
     padding: 4rem 2rem;
   }
   
@@ -42,6 +42,7 @@
   
   .contact-item {
     background: white;
+    color: black;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -56,12 +57,12 @@
   
   .contact-item a {
     text-decoration: none;
-    color: #e63946;
+    color: #FF6600;
     font-weight: bold;
   }
   
   .contact-item a:hover {
-    color: #d62839;
+    color: #FF6600;
   }
   
   /* Contact Form */
