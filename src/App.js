@@ -10,7 +10,7 @@ function App() {
     <Router>
       <div className="container">
         <header className="header">
-          <img src="/logo.png" alt="Slammed Detailing Logo" className="logo" />
+          <img src="/Svg logo.svg" alt="Slammed Detailing Logo" className="logo" />
           <nav>
             <ul>
               <li><Link to="/">Home</Link></li>
