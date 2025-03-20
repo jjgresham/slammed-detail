@@ -34,11 +34,13 @@
   }
   
   .contact-details {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-  }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    max-width: 900px; /* Ensure a reasonable width */
+    margin: 0 auto;
+  }  
   
   .contact-item {
     background: white;
@@ -147,8 +149,7 @@
 
 /* Responsive: Change to 1 column on small screens */
 @media (max-width: 768px) {
-  .city-list {
-    grid-template-columns: 1fr; /* 1 column on mobile */
-    margin-left: 0; /* Remove left margin on mobile */
+  .contact-details {
+    grid-template-columns: 1fr; /* Single-column layout */
   }
 }
