@@ -1,5 +1,6 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6"; 
 import "./Footer.css";
 
 const Footer = () => {
@@ -15,14 +16,14 @@ const Footer = () => {
         </span>
         {/* Right side - Social Icons */}
         <div className="footer-social">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://facebook.com/share/1ELn1GyG9t/?mibextid=wwXlfr" target="_blank" rel="noopener noreferrer">
             <FaFacebook />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/801slammed.detailing" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <FaTwitter />
+          <a href="https://www.tiktok.com/@801slammed.detailing" target="_blank" rel="noopener noreferrer">
+            <FaTiktok />
           </a>
         </div>
       </div>
