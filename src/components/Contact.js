@@ -61,7 +61,7 @@ function Contact() {
         <div className="contact-details">
           <div className="contact-item">
             <h3>Phone</h3>
-            <p><a href="tel:+1234567890">(208) 831-5748</a></p>
+            <p><a href="tel:+12088315748">(208) 831-5748</a></p>
           </div>
           <div className="contact-item">
             <h3>Email</h3>
