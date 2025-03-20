@@ -6,7 +6,6 @@ import Pricing from './components/Pricing';
 import Gallery from './components/Gallery';
 import Home from './components/Home';
 import Footer from './components/Footer';
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);

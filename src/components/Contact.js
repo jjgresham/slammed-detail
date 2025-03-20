@@ -43,7 +43,7 @@ function Contact() {
 
     // Load Google Maps script dynamically
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCAsIWGAMoomUxM1u-p7DRYYXR4GZw8YiQ&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_API_KEY}&callback=initMap`;
     script.async = true;
     document.head.appendChild(script);
   }, []);

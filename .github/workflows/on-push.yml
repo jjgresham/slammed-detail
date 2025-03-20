@@ -39,6 +39,9 @@ jobs:
       - name: Run build
         if: github.ref == 'refs/heads/main'
         run: npm run build --prod
+        env:
+          REACT_APP_GOOGLE_API_KEY: ${{ secrets.REACT_APP_GOOGLE_API_KEY }}
+
 
       - name: Deploy to S3
         if: github.ref == 'refs/heads/main'
