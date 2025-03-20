@@ -19,16 +19,13 @@ function Home() {
         <h2>Our Services</h2>
         <div className="service-list">
           <div className="service">
-            <h3>Exterior Detailing</h3>
-            <p>Deep cleaning, polishing, and ceramic coatings.</p>
+            <h3>Auto Detailing</h3>
           </div>
           <div className="service">
-            <h3>Interior Detailing</h3>
-            <p>Thorough vacuuming, steam cleaning, and upholstery care.</p>
+            <h3>Ceramic Coatings</h3>
           </div>
           <div className="service">
             <h3>Paint Correction</h3>
-            <p>Remove swirls and scratches for a flawless finish.</p>
           </div>
         </div>
       </section>

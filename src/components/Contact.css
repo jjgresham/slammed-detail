@@ -55,7 +55,7 @@
     margin-bottom: 0.5rem;
   }
   
-  .contact-item a {
+  .contact-item a, .contact-item p {
     text-decoration: none;
     color: #FF6600;
     font-weight: bold;
@@ -118,4 +118,37 @@
   .cta-button:hover {
     background: #d62839;
   }
-  
+
+/* Service Area Section */
+.service-area {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.city-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 5px; /* Space between items */
+  padding: 0;
+  margin: 2rem;
+  margin-left: 15%;
+  font-size: 1rem;
+  list-style: none;
+}
+
+.city-list li {
+  text-align: start;
+}
+
+.city-list li:hover {
+  color: #FF6600;
+  cursor: pointer;
+}
+
+/* Responsive: Change to 1 column on small screens */
+@media (max-width: 768px) {
+  .city-list {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    margin-left: 0; /* Remove left margin on mobile */
+  }
+}

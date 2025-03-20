@@ -15,35 +15,47 @@ function Pricing() {
 
       <section className="pricing-table">
         <div className="pricing-card">
-          <h3>Basic Wash</h3>
-          <p className="price">$50</p>
+          <h3>Exterior Detail</h3>
+          <p className="price">From $155</p>
           <ul>
-            <li>Hand Wash & Dry</li>
-            <li>Interior Vacuum</li>
-            <li>Windows & Mirrors Cleaned</li>
-            <li>Wheel & Tire Shine</li>
+            <li>Hand Wash & Foam Bath</li>
+            <li>Bug & Tar Removal</li>
+            <li>Wheels & Tires Cleaned</li>
+            <li>Protective Wax or Sealant</li>
+            <li>Iron/Rust Particle Removal</li>
+            <li>Clay Bar</li>
+            <li>Streak Free Glass</li>
+            <li>Polish & Scratch Removal</li>
+            <li>Ceramic Coating Paint Protection</li>
+            <li>Engine Detail</li>
+            <li>Headlight Restoration</li>
           </ul>
         </div>
 
-        <div className="pricing-card">
-          <h3>Full Detail</h3>
-          <p className="price">$150</p>
+        <div className="pricing-card highlight">
+          <h3>Full Interior & Exterior Detail</h3>
+          <p className="price">From $295</p>
+          <p>ALL Interior & Exterior Features Plus:</p>
           <ul>
-            <li>Everything in Basic Wash</li>
             <li>Wax & Paint Sealant</li>
             <li>Deep Interior Cleaning</li>
-            <li>Leather & Fabric Conditioning</li>
+            <li>Satisfaction Guranteed!</li>
           </ul>
         </div>
 
         <div className="pricing-card">
-          <h3>Premium Ceramic Coating</h3>
-          <p className="price">$500+</p>
+          <h3>Interior Detail</h3>
+          <p className="price">From $195</p>
           <ul>
-            <li>Everything in Full Detail</li>
-            <li>Multi-Layer Ceramic Protection</li>
-            <li>6-12 Month Durability</li>
-            <li>Water & Dirt Repellent Finish</li>
+            <li>Detailed Vacuum & Wipe Down</li>
+            <li>Trash Removal</li>
+            <li>Carpet & Upholstery Shampoo</li>
+            <li>Hot Water Extraction</li>
+            <li>Steam Cleaning</li>
+            <li>Odor Removal/Ozone Treatment</li>
+            <li>Leather Conditioning</li>
+            <li>Door Jamb Cleaning</li>
+            <li>Stain Removal</li>
           </ul>
         </div>
       </section>
