@@ -43,14 +43,41 @@
     padding: 3rem 2rem;
   }
   
-  .pricing-card {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-  }
+/* Highlighted Pricing Card */
+.pricing-card.highlight {
+  border: 3px solid #FF9E42;  /* Orange border */
+  transform: scale(1.2);      /* Make it slightly larger */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+}
+
+/* Make all pricing cards slightly smaller for contrast */
+.pricing-card {
+  width: 280px;
+  transition: transform 0.3s ease-in-out;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Slight hover effect for all cards */
+.pricing-card.highlight:hover {
+  transform: scale(1.01);
+}
+
+/* Emphasize text inside highlight card */
+.pricing-card.highlight h3 {
+  font-size: 1.9rem;
+  color: #FF9E42; /* Match the border */
+}
+
+.pricing-card.highlight .price {
+  font-size: 2.2rem;
+  color: #FF9E42;
+  font-weight: bold;
+}
   
   .pricing-card h3 {
     font-size: 1.5rem;
@@ -65,14 +92,16 @@
   }
   
   .pricing-card ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .pricing-card ul li {
+    text-align: start; /* Align text to the left */
+    padding-left: 1.75rm;
+    list-style-type: disc; /* Default bullets */
+    list-style-position: outside; /* Ensures bullets appear properly */
+}
+
+.pricing-card ul li {
     font-size: 1rem;
     margin: 8px 0;
-  }
+}
   
   /* Call to Action */
   .cta-section {
@@ -95,4 +124,12 @@
   .cta-button:hover {
     background: #d62839;
   }
-  
+ 
+  @media (max-width: 768px) {
+
+    .pricing-card {
+        max-width: 400px; /* Prevent excessive stretching */
+        padding: 1.5rem;
+    }
+
+}
