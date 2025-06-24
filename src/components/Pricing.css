@@ -1,11 +1,9 @@
-/* Pricing.css */
 .pricing-page {
     text-align: center;
     font-family: 'Arial', sans-serif;
     color: #333;
   }
   
-  /* Hero Section */
   .pricing-hero {
     width: 100%;
     height: 60vh;
@@ -22,7 +20,6 @@
     font-weight: bold;
   }
   
-  /* Pricing Intro */
   .pricing-intro {
     background-color: #222222;
     color: #CBC3B4;
@@ -33,44 +30,58 @@
     font-size: 2rem;
     margin-bottom: 1rem;
   }
-  
-  /* Pricing Table */
-  .pricing-table {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 3rem 2rem;
-  }
-  
-/* Highlighted Pricing Card */
-.pricing-card.highlight {
-  border: 3px solid #FF9E42;  /* Orange border */
-  transform: scale(1.2);      /* Make it slightly larger */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+
+.pricing-table {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 3rem 1rem; 
+  align-items: flex-start; 
+  box-sizing: border-box;
 }
 
-/* Make all pricing cards slightly smaller for contrast */
 .pricing-card {
-  width: 280px;
-  transition: transform 0.3s ease-in-out;
   background-color: white;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 300px;
+  min-width: 280px;
+  max-width: 320px;
   text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  flex: 0 0 auto; 
+  box-sizing: border-box;
 }
 
-/* Slight hover effect for all cards */
+.pricing-card.highlight {
+  border: 3px solid #FF9E42;
+  box-shadow: 0 8px 16px rgba(255, 158, 66, 0.3);
+  position: relative;
+}
+
+.pricing-card.highlight::before {
+  content: "Most Popular";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FF9E42;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
 .pricing-card.highlight:hover {
   transform: scale(1.01);
 }
 
-/* Emphasize text inside highlight card */
 .pricing-card.highlight h3 {
   font-size: 1.9rem;
-  color: #FF9E42; /* Match the border */
+  color: #FF9E42; 
 }
 
 .pricing-card.highlight .price {
@@ -92,10 +103,10 @@
   }
   
   .pricing-card ul {
-    text-align: start; /* Align text to the left */
+    text-align: start; 
     padding-left: 1.75rm;
-    list-style-type: disc; /* Default bullets */
-    list-style-position: outside; /* Ensures bullets appear properly */
+    list-style-type: disc; 
+    list-style-position: outside;
 }
 
 .pricing-card ul li {
@@ -103,7 +114,6 @@
     margin: 8px 0;
 }
   
-  /* Call to Action */
   .cta-section {
     padding: 3rem 2rem;
     background: #f8f8f8;
@@ -125,11 +135,36 @@
     background: #d62839;
   }
  
-  @media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .pricing-table {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+  
+  .pricing-card {
+    width: 90%;
+    max-width: 400px;
+    min-width: unset;
+  }
+}
 
-    .pricing-card {
-        max-width: 400px; /* Prevent excessive stretching */
-        padding: 1.5rem;
-    }
-
+@media (max-width: 768px) {
+  .pricing-table {
+    padding: 2rem 0.75rem;
+    gap: 1.5rem;
+  }
+  
+  .pricing-card {
+    width: 95%;
+    max-width: 350px;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+  
+  .pricing-card.highlight::before {
+    font-size: 0.8rem;
+    padding: 4px 12px;
+  }
 }

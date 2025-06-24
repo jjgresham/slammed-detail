@@ -1,11 +1,9 @@
-/* Contact.css */
 .contact-page {
     text-align: center;
     font-family: 'Arial', sans-serif;
     color: #333;
   }
   
-  /* Hero Section */
   .contact-hero {
     width: 100%;
     height: 60vh;
@@ -22,7 +20,6 @@
     font-weight: bold;
   }
   
-  /* Contact Info Section */
   .contact-info {
     background-color: #CBC3B4;
     padding: 4rem 2rem;
@@ -33,24 +30,26 @@
     margin-bottom: 1rem;
   }
   
-  .contact-details {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    justify-items: center;
-    max-width: 900px; /* Ensure a reasonable width */
-    margin: 0 auto;
-  }  
-  
-  .contact-item {
-    background: white;
-    color: black;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-  }
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}  
+
+.contact-item {
+  background: white;
+  color: black;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 280px;
+  max-width: 320px;
+  text-align: center;
+}
   
   .contact-item h3 {
     font-size: 1.3rem;
@@ -121,7 +120,6 @@
     background: #d62839;
   }
 
-/* Service Area Section */
 .service-area {
   padding: 2rem;
   background-color: #f9f9f9;
@@ -129,8 +127,8 @@
 
 .city-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  gap: 5px; /* Space between items */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 5px; 
   padding: 0;
   margin: 2rem;
   margin-left: 15%;
@@ -142,14 +140,20 @@
   text-align: start;
 }
 
-.city-list li:hover {
-  color: #FF6600;
-  cursor: pointer;
-}
-
-/* Responsive: Change to 1 column on small screens */
 @media (max-width: 768px) {
   .contact-details {
-    grid-template-columns: 1fr; /* Single-column layout */
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-item {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .city-list {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    margin-left: 10%; 
   }
 }
